@@ -1,5 +1,5 @@
 PODS:
-  - CleverTap-iOS-SDK (3.5.0):
+  - CleverTap-iOS-SDK (3.5.1):
     - SDWebImage/GIF (~> 4.0)
   - FLAnimatedImage (1.0.12)
   - SDWebImage/Core (4.4.4)
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CleverTap-iOS-SDK: 696bac1fbf68275e3eb3e19feba79208a8479478
+  CleverTap-iOS-SDK: 827debd1eeaf95dc3a0b24e9343d5990adf462ed
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   SDWebImage: c00ec18ab25d10e5ffac109b0f78d1b4341c9691
 
