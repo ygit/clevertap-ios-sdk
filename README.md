@@ -2,6 +2,7 @@
 
 # CleverTap iOS SDK  
 [![codebeat badge](https://codebeat.co/badges/09f99423-6a7b-4ea9-b8ce-03e2fb96aae7)](https://codebeat.co/projects/github-com-ygit-clevertap-ios-sdk-master)
+[![Build Status](https://app.bitrise.io/app/cd2033e2f9c99a71/status.svg?token=W_KYK64LU6ogo2enbkWUOA&branch=master)](https://app.bitrise.io/app/cd2033e2f9c99a71)
 [![Version](https://img.shields.io/cocoapods/v/CleverTap-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/CleverTap-iOS-SDK)
 [![License](https://img.shields.io/cocoapods/l/CleverTap-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/CleverTap-iOS-SDK)
 [![Platform](https://img.shields.io/cocoapods/p/CleverTap-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/CleverTap-iOS-SDK)
