@@ -19,6 +19,7 @@
 #endif
 
 @protocol CleverTapSyncDelegate;
+@protocol CleverTapPushNotificationDelegate;
 #if !CLEVERTAP_NO_INAPP_SUPPORT
 @protocol CleverTapInAppNotificationDelegate;
 #endif
@@ -359,7 +360,7 @@ typedef NS_ENUM(int, CleverTapLogLevel) {
  
  @param properties       properties dictionary
  @param cleverTapID        the CleverTap id
-
+ 
  */
 - (void)onUserLogin:(NSDictionary *_Nonnull)properties withCleverTapID:(NSString * _Nonnull)cleverTapID;
 
@@ -684,6 +685,17 @@ typedef NS_ENUM(int, CleverTapLogLevel) {
  */
 - (void)recordNotificationViewedEventWithData:(id _Nonnull)notificationData;
 
+
+/*!
+ @method
+ 
+ @abstract
+ Record Notification Clicked for Push Notifications.
+ 
+ @param notificationData       notificationData id
+ */
+- (void)recordNotificationClickedEventWithData:(id _Nonnull)notificationData;
+
 /*!
  @method
  
@@ -874,6 +886,25 @@ extern NSString * _Nonnull const CleverTapProfileDidInitializeNotification;
  */
 - (void)setSyncDelegate:(id <CleverTapSyncDelegate> _Nullable)delegate;
 
+
+/*!
+
+@method
+
+@abstract
+The `CleverTapPushNotificationDelegate` protocol provides methods for notifying
+your application (the adopting delegate) about push notifications.
+
+@see CleverTapPushNotificationDelegate.h
+
+@discussion
+This sets the CleverTapPushNotificationDelegate.
+
+@param delegate     an object conforming to the CleverTapPushNotificationDelegate Protocol
+*/
+
+- (void)setPushNotificationDelegate:(id <CleverTapPushNotificationDelegate> _Nullable)delegate;
+
 #if !CLEVERTAP_NO_INAPP_SUPPORT
 /*!
  
@@ -890,7 +921,7 @@ extern NSString * _Nonnull const CleverTapProfileDidInitializeNotification;
  
  @param delegate     an object conforming to the CleverTapInAppNotificationDelegate Protocol
  */
-- (void)setInAppNotificationDelegate:(id  <CleverTapInAppNotificationDelegate> _Nullable)delegate;
+- (void)setInAppNotificationDelegate:(id <CleverTapInAppNotificationDelegate> _Nullable)delegate;
 #endif
 
 /* ------------------------------------------------------------------------------------------------------
